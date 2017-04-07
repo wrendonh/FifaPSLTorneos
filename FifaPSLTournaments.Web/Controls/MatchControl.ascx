@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MatchControl.ascx.cs" Inherits="FifaPSLTournaments.Web.Controls.MatchControl" %>
 <div>
-    <div class="from-group clearfix">
+    <div class="row">
         <div class="col-md-3 text-left">
             <asp:Label ID="lblLocalTeam" runat="server"></asp:Label>
         </div>
@@ -21,7 +21,7 @@
             <asp:RangeValidator ID="rvVisitorTeam" runat="server" ControlToValidate="txtVisitorTeam" Type="Integer"
                 Display="Dynamic" MinimumValue="0" MaximumValue="20" ErrorMessage="Valor fuera de rango." Style="color:red;"></asp:RangeValidator>
         </div>
-        <div class="col-md-3 text-left">
+        <div class="col-md-3 text-right">
             <asp:Label ID="lblVisitorTeam" runat="server"></asp:Label>
         </div>
     </div>
