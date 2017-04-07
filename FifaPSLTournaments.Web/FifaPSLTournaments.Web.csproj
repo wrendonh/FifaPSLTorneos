@@ -155,6 +155,9 @@
     <Folder Include="Models\" />
     <Folder Include="Tournament\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\PlayingDayControl.ascx.resx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
