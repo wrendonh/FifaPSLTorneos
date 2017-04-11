@@ -10,105 +10,96 @@
 namespace FifaPSLTournaments.Web.Controls {
     
     
-    public partial class MatchControl {
+    public partial class TeamPositionControl {
         
         /// <summary>
-        /// txtId control.
+        /// lblPosition control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId;
+        protected global::System.Web.UI.WebControls.Label lblPosition;
         
         /// <summary>
-        /// lblLocalTeam control.
+        /// lblTeamName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLocalTeam;
+        protected global::System.Web.UI.WebControls.Label lblTeamName;
         
         /// <summary>
-        /// lblScoreLocalTeam control.
+        /// lblPlayedMatches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblScoreLocalTeam;
+        protected global::System.Web.UI.WebControls.Label lblPlayedMatches;
         
         /// <summary>
-        /// txtScoreLocalTeam control.
+        /// lblWonMatches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtScoreLocalTeam;
+        protected global::System.Web.UI.WebControls.Label lblWonMatches;
         
         /// <summary>
-        /// rvScoreLocalTeam control.
+        /// lblTiedMatches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvScoreLocalTeam;
+        protected global::System.Web.UI.WebControls.Label lblTiedMatches;
         
         /// <summary>
-        /// lblSeparator control.
+        /// lblLostMatches control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSeparator;
+        protected global::System.Web.UI.WebControls.Label lblLostMatches;
         
         /// <summary>
-        /// btnSave control.
+        /// lblScoredGoals control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
+        protected global::System.Web.UI.WebControls.Label lblScoredGoals;
         
         /// <summary>
-        /// lblScoreVisitorTeam control.
+        /// lblReceivedGoals control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblScoreVisitorTeam;
+        protected global::System.Web.UI.WebControls.Label lblReceivedGoals;
         
         /// <summary>
-        /// txtScoreVisitorTeam control.
+        /// lblDifferenceGoals control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtScoreVisitorTeam;
+        protected global::System.Web.UI.WebControls.Label lblDifferenceGoals;
         
         /// <summary>
-        /// rvScoreVisitorTeam control.
+        /// lblPoints control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvScoreVisitorTeam;
-        
-        /// <summary>
-        /// lblVisitorTeam control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblVisitorTeam;
+        protected global::System.Web.UI.WebControls.Label lblPoints;
     }
 }

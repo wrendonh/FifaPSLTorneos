@@ -43,6 +43,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -94,11 +101,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\GroupPositionPlayingDayControl.ascx" />
+    <Content Include="Controls\GroupPositionsControl.ascx" />
+    <Content Include="Controls\TitlePositionControl.ascx" />
+    <Content Include="Controls\TeamPositionControl.ascx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\General.js" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,9 +141,40 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Tournament\TournamentTable.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\GroupPositionPlayingDayControl.ascx.cs">
+      <DependentUpon>GroupPositionPlayingDayControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupPositionPlayingDayControl.ascx.designer.cs">
+      <DependentUpon>GroupPositionPlayingDayControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GroupPositionsControl.ascx.cs">
+      <DependentUpon>GroupPositionsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupPositionsControl.ascx.designer.cs">
+      <DependentUpon>GroupPositionsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TitlePositionControl.ascx.cs">
+      <DependentUpon>TitlePositionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TitlePositionControl.ascx.designer.cs">
+      <DependentUpon>TitlePositionControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TeamPositionControl.ascx.cs">
+      <DependentUpon>TeamPositionControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TeamPositionControl.ascx.designer.cs">
+      <DependentUpon>TeamPositionControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MatchControl.ascx.cs">
       <DependentUpon>MatchControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,14 +193,47 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tournament\TournamentTable.aspx.cs">
+      <DependentUpon>TournamentTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tournament\TournamentTable.aspx.designer.cs">
+      <DependentUpon>TournamentTable.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Tournament\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\App_LocalResources\PlayingDayControl.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\TitlePositionControl.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FifaPSLTournaments.BusinessLogic\FifaPSLTournaments.BusinessLogic.csproj">
+      <Project>{14e83bd4-7c4a-4450-ae7d-3cdbcb4f2300}</Project>
+      <Name>FifaPSLTournaments.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FifaPSLTournaments.Helper\FifaPSLTournaments.Helper.csproj">
+      <Project>{e1dff46c-3efb-4d1a-b918-71bc849d94f6}</Project>
+      <Name>FifaPSLTournaments.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FifaPSLTournaments.Model\FifaPSLTournaments.Model.csproj">
+      <Project>{e457c002-352a-459c-a8e0-2496809f3940}</Project>
+      <Name>FifaPSLTournaments.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\App_LocalResources\MatchControl.ascx.resx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

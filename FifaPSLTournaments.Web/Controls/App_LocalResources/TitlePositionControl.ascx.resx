@@ -117,7 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblPlayingDay.Text" xml:space="preserve">
-    <value>Playing Day {0}</value>
+  <data name="lblDifferenceGoals.Text" xml:space="preserve">
+    <value>GD</value>
+  </data>
+  <data name="lblLostMatches.Text" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="lblPlayedMatches.Text" xml:space="preserve">
+    <value>GP</value>
+  </data>
+  <data name="lblPoints.Text" xml:space="preserve">
+    <value>PTS</value>
+  </data>
+  <data name="lblPosition.Text" xml:space="preserve">
+    <value>Pos</value>
+  </data>
+  <data name="lblPostionsTitle.Text" xml:space="preserve">
+    <value>Positions</value>
+  </data>
+  <data name="lblReceivedGoals.Text" xml:space="preserve">
+    <value>GA</value>
+  </data>
+  <data name="lblScoredGoals.Text" xml:space="preserve">
+    <value>GF</value>
+  </data>
+  <data name="lblTeamName.Text" xml:space="preserve">
+    <value>Player (Team)</value>
+  </data>
+  <data name="lblTiedMatches.Text" xml:space="preserve">
+    <value>T</value>
+  </data>
+  <data name="lblWonMatches.Text" xml:space="preserve">
+    <value>W</value>
   </data>
 </root>

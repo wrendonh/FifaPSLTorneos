@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaPSLTournaments.Web", "FifaPSLTournaments.Web\FifaPSLTournaments.Web.csproj", "{F16720BA-D611-4AB2-9810-638AFF9723CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaPSLTournaments.Model", "FifaPSLTournaments.Model\FifaPSLTournaments.Model.csproj", "{E457C002-352A-459C-A8E0-2496809F3940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaPSLTournaments.Data", "FifaPSLTournaments.Data\FifaPSLTournaments.Data.csproj", "{04E016D3-60F8-45F4-95EA-494FBE5067B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaPSLTournaments.BusinessLogic", "FifaPSLTournaments.BusinessLogic\FifaPSLTournaments.BusinessLogic.csproj", "{14E83BD4-7C4A-4450-AE7D-3CDBCB4F2300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaPSLTournaments.Repository", "FifaPSLTournaments.Repository\FifaPSLTournaments.Repository.csproj", "{545AC9AF-F7AD-41DE-9619-96214B1A9A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaPSLTournaments.Helper", "FifaPSLTournaments.Helper\FifaPSLTournaments.Helper.csproj", "{E1DFF46C-3EFB-4D1A-B918-71BC849D94F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{F16720BA-D611-4AB2-9810-638AFF9723CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16720BA-D611-4AB2-9810-638AFF9723CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16720BA-D611-4AB2-9810-638AFF9723CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E457C002-352A-459C-A8E0-2496809F3940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E457C002-352A-459C-A8E0-2496809F3940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E457C002-352A-459C-A8E0-2496809F3940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E457C002-352A-459C-A8E0-2496809F3940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E016D3-60F8-45F4-95EA-494FBE5067B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E016D3-60F8-45F4-95EA-494FBE5067B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E016D3-60F8-45F4-95EA-494FBE5067B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E016D3-60F8-45F4-95EA-494FBE5067B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14E83BD4-7C4A-4450-AE7D-3CDBCB4F2300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14E83BD4-7C4A-4450-AE7D-3CDBCB4F2300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14E83BD4-7C4A-4450-AE7D-3CDBCB4F2300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14E83BD4-7C4A-4450-AE7D-3CDBCB4F2300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{545AC9AF-F7AD-41DE-9619-96214B1A9A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545AC9AF-F7AD-41DE-9619-96214B1A9A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545AC9AF-F7AD-41DE-9619-96214B1A9A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545AC9AF-F7AD-41DE-9619-96214B1A9A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1DFF46C-3EFB-4D1A-B918-71BC849D94F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DFF46C-3EFB-4D1A-B918-71BC849D94F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DFF46C-3EFB-4D1A-B918-71BC849D94F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DFF46C-3EFB-4D1A-B918-71BC849D94F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
